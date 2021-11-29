@@ -48,11 +48,11 @@ step("Open shopping-cart application", async () => {
 });
 
 step("Add first product to basket", async () => {
-    await click("Add Basket");
+    await click("Add to Basket");
 });
 
 step("Go to <item> page", async (item) => {
-    await goto("/item");
+    await click(item);
 });
 
 step("See the product", async () => {
