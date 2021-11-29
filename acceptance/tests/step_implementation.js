@@ -47,6 +47,31 @@ step("Open shopping-cart application", async () => {
     await goto("localhost:3000");
 });
 
-step("Open google", async () => {
-    await goto("www.google.com");
+step("Add first product to basket", async () => {
+    await click("Add Basket");
 });
+
+step("Go to <item> page", async (item) => {
+    await goto("/item");
+});
+
+step("See the product", async () => {
+
+});
+
+step("Write to <item1> area <item2>", async (item1, item2) => {
+    await write(item2, into(textBox(item1)));
+});
+
+step("Create the product", async () => {
+    await click("Create");
+});
+
+step("<item1> <item2> times countity of product", async (item1, item2) => {
+    await write(item1, into(textBox("Quantity")));
+    await click(item2);
+});
+
+step("Delete product", async () => {
+    await click("Delete");
+})
