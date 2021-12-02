@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <button>{{ title }}</button>
+    <button>CREATE</button>
+    <button>BASKET</button>
   </header>
 </template>
 

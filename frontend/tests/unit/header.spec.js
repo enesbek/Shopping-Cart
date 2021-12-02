@@ -1,17 +1,29 @@
 import { shallowMount } from '@vue/test-utils'
 import Header from '@/components/Header.vue'
 
-describe("displays message", () => {
-    it("render component", () => {
-        // mount() returns a wrapped Vue component we can interact with
-        const wrapper = shallowMount(Header, {
+describe("header component", () => {
+    let wrapper = null
+
+    beforeEach(() => {
+        wrapper = shallowMount(Header, {
             propsData: {
-                title: "SHOPPING CART"
+                title: "SHOPPING CART",
             }
         })
-        expect(wrapper.vm.$options.name).toMatch("Header")
+    })
 
-        expect(wrapper.text()).toMatch("SHOPPING CART")
+    afterEach(() => {
+        wrapper = null;
+    })
+
+    it("render component", () => {
+        expect(wrapper.vm.$options.name).toMatch("Header")
     });
     
-})
+    it("control the routes", () => {
+        expect(wrapper.findAll('button').length).toEqual(3)
+        expect(wrapper.findAll('button').at(0).text()).toMatch("SHOPPING CART")
+        expect(wrapper.findAll('button').at(1).text()).toMatch("CREATE")
+        expect(wrapper.findAll('button').at(2).text()).toMatch("BASKET")
+    });
+});
