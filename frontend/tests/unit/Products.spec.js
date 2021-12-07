@@ -2,10 +2,10 @@ import { shallowMount } from '@vue/test-utils';
 import Products from "@/components/Products";
 import axios from "axios";
 
-jest.mock('axios')
+jest.mock("axios")
 
 describe("Implementation test for Products.vue with succesful HTTP GET", () => {
-  var wrapper = null
+  let wrapper = null
 
   beforeEach(() => {
     const responseGet = { products: 
