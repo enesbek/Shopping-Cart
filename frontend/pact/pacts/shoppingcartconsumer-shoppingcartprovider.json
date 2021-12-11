@@ -1,0 +1,103 @@
+{
+  "consumer": {
+    "name": "ShoppingCartConsumer"
+  },
+  "provider": {
+    "name": "ShoppingCartProvider"
+  },
+  "interactions": [
+    {
+      "description": "a request for products",
+      "providerState": "i have products",
+      "request": {
+        "method": "GET",
+        "path": "/allproducts",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "products": [
+            {
+              "id": "1",
+              "name": "iphone",
+              "price": 1000,
+              "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+              "quantity": 1
+            }
+          ]
+        },
+        "matchingRules": {
+          "$.body.products": {
+            "min": 1
+          },
+          "$.body.products[*].*": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "a request increment quantity of product",
+      "providerState": "increment product",
+      "request": {
+        "method": "POST",
+        "path": "/basket/products/increment",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "increment": {
+            "id": 1,
+            "name": "iphone",
+            "price": 1000,
+            "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+            "quantity": 2
+          }
+        }
+      }
+    },
+    {
+      "description": "a request decrement quantity of product",
+      "providerState": "decrement product",
+      "request": {
+        "method": "POST",
+        "path": "/basket/products/decrement",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "decrement": {
+            "id": 1,
+            "name": "iphone",
+            "price": 1000,
+            "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+            "quantity": 1
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

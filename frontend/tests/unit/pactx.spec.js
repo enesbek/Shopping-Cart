@@ -6,7 +6,7 @@ import { getProducts, increment, decrement} from "@/../services/shoppingCart.ser
 const { eachLike } = Matchers
 
 pactWith(
-    { consumer: "ShoppingCart Consumer", provider: "ShoppingCart Provider", cors: true},
+    { consumer: "ShoppingCartConsumer", provider: "ShoppingCartProvider", cors: true, },
     provider => {
         describe("Get Products", () => {
             const PRODUCT = 

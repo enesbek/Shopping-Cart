@@ -1,0 +1,220 @@
+I, [2021-12-10T15:30:46.521264 #94628]  INFO -- : Registered expected interaction GET /allproducts
+D, [2021-12-10T15:30:46.521516 #94628] DEBUG -- : {
+  "description": "a request for products",
+  "providerState": "i have products",
+  "request": {
+    "method": "GET",
+    "path": "/allproducts",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "products": {
+        "json_class": "Pact::ArrayLike",
+        "contents": {
+          "id": "1",
+          "name": "iphone",
+          "price": 1000,
+          "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+          "quantity": 1
+        },
+        "min": 1
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-12-10T15:30:46.547124 #94628]  INFO -- : Received request GET /allproducts
+D, [2021-12-10T15:30:46.547258 #94628] DEBUG -- : {
+  "path": "/allproducts",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json",
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.2.1",
+    "Accept-Language": "en",
+    "Origin": "http://localhost",
+    "Host": "127.0.0.1:63218",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-12-10T15:30:46.547601 #94628]  INFO -- : Found matching response for GET /allproducts
+D, [2021-12-10T15:30:46.547702 #94628] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "products": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "id": "1",
+        "name": "iphone",
+        "price": 1000,
+        "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+        "quantity": 1
+      },
+      "min": 1
+    }
+  }
+}
+I, [2021-12-10T15:30:46.562880 #94628]  INFO -- : Verifying - interactions matched
+I, [2021-12-10T15:30:46.566449 #94628]  INFO -- : Cleared interactions
+I, [2021-12-10T15:30:46.571346 #94628]  INFO -- : Registered expected interaction POST /basket/products/increment
+D, [2021-12-10T15:30:46.571472 #94628] DEBUG -- : {
+  "description": "a request increment quantity of product",
+  "providerState": "increment product",
+  "request": {
+    "method": "POST",
+    "path": "/basket/products/increment",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "increment": {
+        "id": 1,
+        "name": "iphone",
+        "price": 1000,
+        "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+        "quantity": 2
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-12-10T15:30:46.580603 #94628]  INFO -- : Received request POST /basket/products/increment
+D, [2021-12-10T15:30:46.580736 #94628] DEBUG -- : {
+  "path": "/basket/products/increment",
+  "query": "",
+  "method": "post",
+  "body": {
+    "quantity": {
+      "id": "1",
+      "name": "iphone",
+      "price": 1000,
+      "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+      "quantity": 1
+    }
+  },
+  "headers": {
+    "Content-Length": "149",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.2.1",
+    "Accept-Language": "en",
+    "Origin": "http://localhost",
+    "Host": "127.0.0.1:63218",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-12-10T15:30:46.580874 #94628]  INFO -- : Found matching response for POST /basket/products/increment
+D, [2021-12-10T15:30:46.580946 #94628] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "increment": {
+      "id": 1,
+      "name": "iphone",
+      "price": 1000,
+      "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+      "quantity": 2
+    }
+  }
+}
+I, [2021-12-10T15:30:46.586040 #94628]  INFO -- : Verifying - interactions matched
+I, [2021-12-10T15:30:46.589761 #94628]  INFO -- : Cleared interactions
+I, [2021-12-10T15:30:46.593642 #94628]  INFO -- : Registered expected interaction POST /basket/products/decrement
+D, [2021-12-10T15:30:46.593735 #94628] DEBUG -- : {
+  "description": "a request decrement quantity of product",
+  "providerState": "decrement product",
+  "request": {
+    "method": "POST",
+    "path": "/basket/products/decrement",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "decrement": {
+        "id": 1,
+        "name": "iphone",
+        "price": 1000,
+        "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+        "quantity": 1
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-12-10T15:30:46.599887 #94628]  INFO -- : Received request POST /basket/products/decrement
+D, [2021-12-10T15:30:46.600022 #94628] DEBUG -- : {
+  "path": "/basket/products/decrement",
+  "query": "",
+  "method": "post",
+  "body": {
+    "quantity": {
+      "id": "1",
+      "name": "iphone",
+      "price": 1000,
+      "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+      "quantity": 1
+    }
+  },
+  "headers": {
+    "Content-Length": "149",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.2.1",
+    "Accept-Language": "en",
+    "Origin": "http://localhost",
+    "Host": "127.0.0.1:63218",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-12-10T15:30:46.600153 #94628]  INFO -- : Found matching response for POST /basket/products/decrement
+D, [2021-12-10T15:30:46.600230 #94628] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "decrement": {
+      "id": 1,
+      "name": "iphone",
+      "price": 1000,
+      "image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+      "quantity": 1
+    }
+  }
+}
+I, [2021-12-10T15:30:46.604707 #94628]  INFO -- : Verifying - interactions matched
+I, [2021-12-10T15:30:46.608331 #94628]  INFO -- : Cleared interactions
+I, [2021-12-10T15:30:46.612010 #94628]  INFO -- : Updating pact for ShoppingCartProvider at /Users/enes.bek/Documents/go-training/Shopping-Cart/frontend/pact/pacts/shoppingcartconsumer-shoppingcartprovider.json

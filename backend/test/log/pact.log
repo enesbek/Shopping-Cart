@@ -1,0 +1,425 @@
+# Logfile created on 2021-12-10 15:03:29 +0300 by logger.rb/47272
+I, [2021-12-10T15:03:41.218370 #92789]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:03:41.218935 #92789]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:03:41.218972 #92789] DEBUG -- : body :
+I, [2021-12-10T15:03:41.236710 #92789]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:03:41 GMT"}, see debug logs for body
+D, [2021-12-10T15:03:41.236787 #92789] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:03:41.241445 #92789]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:03:41.241589 #92789]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:03:41.241627 #92789] DEBUG -- : body :
+I, [2021-12-10T15:03:41.244345 #92789]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:03:41 GMT"}, see debug logs for body
+D, [2021-12-10T15:03:41.244397 #92789] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:03:41.245913 #92789]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:03:41.246029 #92789]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:03:41.246064 #92789] DEBUG -- : body :
+I, [2021-12-10T15:03:41.248382 #92789]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:03:41 GMT"}, see debug logs for body
+D, [2021-12-10T15:03:41.248429 #92789] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:05:12.469383 #92914]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:05:12.469661 #92914]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:05:12.470031 #92914] DEBUG -- : body :
+I, [2021-12-10T15:05:12.487602 #92914]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:05:12 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:05:12.487677 #92914] DEBUG -- : body: 
+I, [2021-12-10T15:05:12.491996 #92914]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:05:12.492131 #92914]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:05:12.492182 #92914] DEBUG -- : body :
+I, [2021-12-10T15:05:12.494465 #92914]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:05:12 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:05:12.494508 #92914] DEBUG -- : body: 
+I, [2021-12-10T15:05:12.495871 #92914]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:05:12.495976 #92914]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:05:12.496004 #92914] DEBUG -- : body :
+I, [2021-12-10T15:05:12.498180 #92914]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:05:12 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:05:12.498218 #92914] DEBUG -- : body: 
+I, [2021-12-10T15:06:31.469945 #93070]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:06:31.470459 #93070]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:06:31.470505 #93070] DEBUG -- : body :
+I, [2021-12-10T15:06:31.486774 #93070]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:06:31 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:06:31.486844 #93070] DEBUG -- : body: 
+I, [2021-12-10T15:06:31.490965 #93070]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:06:31.491130 #93070]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:06:31.491171 #93070] DEBUG -- : body :
+I, [2021-12-10T15:06:31.493530 #93070]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:06:31 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:06:31.493581 #93070] DEBUG -- : body: 
+I, [2021-12-10T15:06:31.495077 #93070]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:06:31.495218 #93070]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:06:31.495251 #93070] DEBUG -- : body :
+I, [2021-12-10T15:06:31.497339 #93070]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:06:31 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:06:31.497384 #93070] DEBUG -- : body: 
+I, [2021-12-10T15:06:55.122698 #93161]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:06:55.122940 #93161]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:06:55.122977 #93161] DEBUG -- : body :
+I, [2021-12-10T15:06:55.137168 #93161]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:06:55 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:06:55.137234 #93161] DEBUG -- : body: 
+I, [2021-12-10T15:06:55.141131 #93161]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:06:55.141275 #93161]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:06:55.141305 #93161] DEBUG -- : body :
+I, [2021-12-10T15:06:55.143782 #93161]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:06:55 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:06:55.143825 #93161] DEBUG -- : body: 
+I, [2021-12-10T15:06:55.145275 #93161]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:06:55.145384 #93161]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:06:55.145413 #93161] DEBUG -- : body :
+I, [2021-12-10T15:06:55.147438 #93161]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:06:55 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:06:55.147479 #93161] DEBUG -- : body: 
+I, [2021-12-10T15:09:08.785483 #93390]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:09:08.785674 #93390]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:09:08.785711 #93390] DEBUG -- : body :
+I, [2021-12-10T15:09:08.798718 #93390]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:09:08 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:09:08.798780 #93390] DEBUG -- : body: 
+I, [2021-12-10T15:09:08.802245 #93390]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:09:08.802368 #93390]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:09:08.802399 #93390] DEBUG -- : body :
+I, [2021-12-10T15:09:08.804593 #93390]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:09:08 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:09:08.804654 #93390] DEBUG -- : body: 
+I, [2021-12-10T15:09:08.805949 #93390]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:09:08.806079 #93390]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:09:08.806106 #93390] DEBUG -- : body :
+I, [2021-12-10T15:09:08.807930 #93390]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:09:08 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:09:08.807969 #93390] DEBUG -- : body: 
+I, [2021-12-10T15:16:22.017994 #93772]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:16:22.018257 #93772]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:16:22.018307 #93772] DEBUG -- : body :
+I, [2021-12-10T15:16:22.035050 #93772]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:16:22 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:16:22.035129 #93772] DEBUG -- : body: 
+I, [2021-12-10T15:16:22.039640 #93772]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:16:22.039786 #93772]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:16:22.039819 #93772] DEBUG -- : body :
+I, [2021-12-10T15:16:22.042153 #93772]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:16:22 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:16:22.042209 #93772] DEBUG -- : body: 
+I, [2021-12-10T15:16:22.043758 #93772]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:16:22.043878 #93772]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:16:22.043929 #93772] DEBUG -- : body :
+I, [2021-12-10T15:16:22.046098 #93772]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:16:22 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:16:22.046143 #93772] DEBUG -- : body: 
+I, [2021-12-10T15:19:07.185518 #93941]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:19:07.186019 #93941]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:19:07.186069 #93941] DEBUG -- : body :
+I, [2021-12-10T15:19:07.200287 #93941]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:19:07 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:19:07.200344 #93941] DEBUG -- : body: 
+I, [2021-12-10T15:19:07.204001 #93941]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:19:07.204117 #93941]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:19:07.204142 #93941] DEBUG -- : body :
+I, [2021-12-10T15:19:07.206098 #93941]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:19:07 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:19:07.206133 #93941] DEBUG -- : body: 
+I, [2021-12-10T15:19:07.207329 #93941]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:19:07.207420 #93941]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:19:07.207445 #93941] DEBUG -- : body :
+I, [2021-12-10T15:19:07.209195 #93941]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:19:07 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:19:07.209227 #93941] DEBUG -- : body: 
+I, [2021-12-10T15:19:48.171050 #94041]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:19:48.171255 #94041]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:19:48.171296 #94041] DEBUG -- : body :
+I, [2021-12-10T15:19:48.184428 #94041]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:19:48 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:19:48.184501 #94041] DEBUG -- : body: 
+I, [2021-12-10T15:19:48.188537 #94041]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:19:48.188691 #94041]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:19:48.188729 #94041] DEBUG -- : body :
+I, [2021-12-10T15:19:48.190507 #94041]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:19:48 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:19:48.190552 #94041] DEBUG -- : body: 
+I, [2021-12-10T15:19:48.192010 #94041]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:19:48.192166 #94041]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:19:48.192200 #94041] DEBUG -- : body :
+I, [2021-12-10T15:19:48.193579 #94041]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:19:48 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:19:48.193645 #94041] DEBUG -- : body: 
+I, [2021-12-10T15:24:47.511280 #94241]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:24:47.511718 #94241]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:24:47.511750 #94241] DEBUG -- : body :
+I, [2021-12-10T15:24:47.524169 #94241]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:24:47 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:24:47.524254 #94241] DEBUG -- : body: 
+I, [2021-12-10T15:24:47.527810 #94241]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:24:47.527959 #94241]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:24:47.527990 #94241] DEBUG -- : body :
+I, [2021-12-10T15:24:47.529263 #94241]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:24:47 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:24:47.529298 #94241] DEBUG -- : body: 
+I, [2021-12-10T15:24:47.530376 #94241]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:24:47.530484 #94241]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:24:47.530510 #94241] DEBUG -- : body :
+I, [2021-12-10T15:24:47.531529 #94241]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:24:47 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:24:47.531562 #94241] DEBUG -- : body: 
+I, [2021-12-10T15:25:11.023794 #94338]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:25:11.024005 #94338]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:25:11.024044 #94338] DEBUG -- : body :
+I, [2021-12-10T15:25:11.039630 #94338]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:25:11 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:25:11.039724 #94338] DEBUG -- : body: 
+I, [2021-12-10T15:25:11.044062 #94338]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:25:11.044207 #94338]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:25:11.044237 #94338] DEBUG -- : body :
+I, [2021-12-10T15:25:11.046594 #94338]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:25:11 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:25:11.046634 #94338] DEBUG -- : body: 
+I, [2021-12-10T15:25:11.047973 #94338]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:25:11.048101 #94338]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:25:11.048129 #94338] DEBUG -- : body :
+I, [2021-12-10T15:25:11.050075 #94338]  INFO -- : Received response with status: 502, headers: {"Date"=>"Fri, 10 Dec 2021 12:25:11 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2021-12-10T15:25:11.050114 #94338] DEBUG -- : body: 
+I, [2021-12-10T15:25:35.289110 #94440]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:25:35.289307 #94440]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:25:35.289344 #94440] DEBUG -- : body :
+I, [2021-12-10T15:25:35.303835 #94440]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:25:35 GMT"}, see debug logs for body
+D, [2021-12-10T15:25:35.303915 #94440] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:25:35.307943 #94440]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:25:35.308094 #94440]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:25:35.308130 #94440] DEBUG -- : body :
+I, [2021-12-10T15:25:35.310640 #94440]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:25:35 GMT"}, see debug logs for body
+D, [2021-12-10T15:25:35.310686 #94440] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:25:35.312173 #94440]  INFO -- : Running example 'Verifying a pact between ShoppingCart Consumer and ShoppingCart Provider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:25:35.312287 #94440]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:25:35.312340 #94440] DEBUG -- : body :
+I, [2021-12-10T15:25:35.314672 #94440]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:25:35 GMT"}, see debug logs for body
+D, [2021-12-10T15:25:35.314729 #94440] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:33:30.947796 #94828]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:33:30.948374 #94828]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:33:30.948418 #94828] DEBUG -- : body :
+I, [2021-12-10T15:33:30.967934 #94828]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:33:30 GMT"}, see debug logs for body
+D, [2021-12-10T15:33:30.968017 #94828] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:33:30.972897 #94828]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:33:30.973074 #94828]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:33:30.973117 #94828] DEBUG -- : body :
+I, [2021-12-10T15:33:30.976136 #94828]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:33:30 GMT"}, see debug logs for body
+D, [2021-12-10T15:33:30.976207 #94828] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:33:30.977886 #94828]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:33:30.978111 #94828]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:33:30.978166 #94828] DEBUG -- : body :
+I, [2021-12-10T15:33:30.981075 #94828]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:33:30 GMT"}, see debug logs for body
+D, [2021-12-10T15:33:30.981148 #94828] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:33:52.899496 #94924]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:33:52.899721 #94924]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:33:52.899765 #94924] DEBUG -- : body :
+I, [2021-12-10T15:33:52.914284 #94924]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:33:52 GMT"}, see debug logs for body
+D, [2021-12-10T15:33:52.914382 #94924] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:33:52.918260 #94924]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:33:52.918396 #94924]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:33:52.918426 #94924] DEBUG -- : body :
+I, [2021-12-10T15:33:52.920923 #94924]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:33:52 GMT"}, see debug logs for body
+D, [2021-12-10T15:33:52.920967 #94924] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:33:52.922387 #94924]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:33:52.922547 #94924]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:33:52.922579 #94924] DEBUG -- : body :
+I, [2021-12-10T15:33:52.924874 #94924]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:33:52 GMT"}, see debug logs for body
+D, [2021-12-10T15:33:52.924920 #94924] DEBUG -- : body: {"message":"Not Found"}
+I, [2021-12-10T15:42:29.291320 #95118]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:42:29.303833 #95118]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:42:29.303902 #95118] DEBUG -- : body :
+I, [2021-12-10T15:42:29.319808 #95118]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:42:29 GMT"}, see debug logs for body
+D, [2021-12-10T15:42:29.319881 #95118] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:42:29.324249 #95118]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:42:29.325874 #95118]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:42:29.325923 #95118] DEBUG -- : body :
+I, [2021-12-10T15:42:29.328205 #95118]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:42:29 GMT"}, see debug logs for body
+D, [2021-12-10T15:42:29.328247 #95118] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:42:29.329706 #95118]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:42:29.330933 #95118]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:42:29.330976 #95118] DEBUG -- : body :
+I, [2021-12-10T15:42:29.332996 #95118]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:42:29 GMT"}, see debug logs for body
+D, [2021-12-10T15:42:29.333036 #95118] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:51:52.594865 #95733]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:51:52.595685 #95733]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:51:52.595730 #95733] DEBUG -- : body :
+I, [2021-12-10T15:51:52.612938 #95733]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:51:52 GMT"}, see debug logs for body
+D, [2021-12-10T15:51:52.613015 #95733] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:51:52.617768 #95733]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:51:52.617919 #95733]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:51:52.617955 #95733] DEBUG -- : body :
+I, [2021-12-10T15:51:52.620551 #95733]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:51:52 GMT"}, see debug logs for body
+D, [2021-12-10T15:51:52.620604 #95733] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:51:52.622065 #95733]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:51:52.622180 #95733]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:51:52.622211 #95733] DEBUG -- : body :
+I, [2021-12-10T15:51:52.624368 #95733]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:51:52 GMT"}, see debug logs for body
+D, [2021-12-10T15:51:52.624410 #95733] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:53:37.551656 #95906]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:53:37.552200 #95906]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:53:37.552274 #95906] DEBUG -- : body :
+I, [2021-12-10T15:53:37.570960 #95906]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:53:37 GMT"}, see debug logs for body
+D, [2021-12-10T15:53:37.571042 #95906] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:53:37.576115 #95906]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:53:37.576287 #95906]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:53:37.576318 #95906] DEBUG -- : body :
+I, [2021-12-10T15:53:37.579554 #95906]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:53:37 GMT"}, see debug logs for body
+D, [2021-12-10T15:53:37.579633 #95906] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:53:37.581316 #95906]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:53:37.581466 #95906]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:53:37.581495 #95906] DEBUG -- : body :
+I, [2021-12-10T15:53:37.584042 #95906]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:53:37 GMT"}, see debug logs for body
+D, [2021-12-10T15:53:37.584100 #95906] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:57:00.876199 #96188]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:57:00.876754 #96188]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T15:57:00.876798 #96188] DEBUG -- : body :
+I, [2021-12-10T15:57:00.898474 #96188]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:57:00 GMT"}, see debug logs for body
+D, [2021-12-10T15:57:00.898571 #96188] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:57:00.904386 #96188]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:57:00.904560 #96188]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T15:57:00.904598 #96188] DEBUG -- : body :
+I, [2021-12-10T15:57:00.907493 #96188]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:57:00 GMT"}, see debug logs for body
+D, [2021-12-10T15:57:00.907565 #96188] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:57:00.909385 #96188]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:57:00.909508 #96188]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T15:57:00.909538 #96188] DEBUG -- : body :
+I, [2021-12-10T15:57:00.911984 #96188]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:57:00 GMT"}, see debug logs for body
+D, [2021-12-10T15:57:00.912028 #96188] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T15:59:59.648077 #96419]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T15:59:59.648287 #96419]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+I, [2021-12-10T15:59:59.665385 #96419]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:59:59 GMT"}, see debug logs for body
+I, [2021-12-10T15:59:59.669812 #96419]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T15:59:59.669962 #96419]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+I, [2021-12-10T15:59:59.672624 #96419]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:59:59 GMT"}, see debug logs for body
+I, [2021-12-10T15:59:59.674237 #96419]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T15:59:59.674357 #96419]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+I, [2021-12-10T15:59:59.676995 #96419]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 12:59:59 GMT"}, see debug logs for body
+I, [2021-12-10T16:03:53.754002 #96655]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T16:03:53.754536 #96655]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+I, [2021-12-10T16:03:53.771982 #96655]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:03:53 GMT"}, see debug logs for body
+I, [2021-12-10T16:03:53.776306 #96655]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T16:03:53.776447 #96655]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+I, [2021-12-10T16:03:53.778900 #96655]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:03:53 GMT"}, see debug logs for body
+I, [2021-12-10T16:03:53.780359 #96655]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T16:03:53.780482 #96655]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+I, [2021-12-10T16:03:53.782589 #96655]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:03:53 GMT"}, see debug logs for body
+I, [2021-12-10T16:04:30.613094 #96756]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T16:04:30.613646 #96756]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T16:04:30.613702 #96756] DEBUG -- : body :
+I, [2021-12-10T16:04:30.630492 #96756]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:04:30 GMT"}, see debug logs for body
+D, [2021-12-10T16:04:30.630563 #96756] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:04:30.634903 #96756]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T16:04:30.635041 #96756]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T16:04:30.635077 #96756] DEBUG -- : body :
+I, [2021-12-10T16:04:30.637595 #96756]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:04:30 GMT"}, see debug logs for body
+D, [2021-12-10T16:04:30.637646 #96756] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:04:30.639134 #96756]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T16:04:30.639278 #96756]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T16:04:30.639339 #96756] DEBUG -- : body :
+I, [2021-12-10T16:04:30.641648 #96756]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:04:30 GMT"}, see debug logs for body
+D, [2021-12-10T16:04:30.641697 #96756] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:06:55.453323 #97010]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T16:06:55.453742 #97010]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T16:06:55.453772 #97010] DEBUG -- : body :
+I, [2021-12-10T16:06:55.467786 #97010]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:06:55 GMT"}, see debug logs for body
+D, [2021-12-10T16:06:55.467851 #97010] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:06:55.471462 #97010]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T16:06:55.471593 #97010]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T16:06:55.471620 #97010] DEBUG -- : body :
+I, [2021-12-10T16:06:55.473487 #97010]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:06:55 GMT"}, see debug logs for body
+D, [2021-12-10T16:06:55.473522 #97010] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:06:55.474599 #97010]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T16:06:55.474682 #97010]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T16:06:55.474707 #97010] DEBUG -- : body :
+I, [2021-12-10T16:06:55.476466 #97010]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:06:55 GMT"}, see debug logs for body
+D, [2021-12-10T16:06:55.476502 #97010] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:13:27.193646 #97600]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T16:13:27.194271 #97600]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T16:13:27.194318 #97600] DEBUG -- : body :
+I, [2021-12-10T16:13:27.211177 #97600]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:13:27 GMT"}, see debug logs for body
+D, [2021-12-10T16:13:27.211283 #97600] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:13:27.215679 #97600]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T16:13:27.215824 #97600]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T16:13:27.215855 #97600] DEBUG -- : body :
+I, [2021-12-10T16:13:27.218643 #97600]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:13:27 GMT"}, see debug logs for body
+D, [2021-12-10T16:13:27.218687 #97600] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:13:27.220147 #97600]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T16:13:27.220271 #97600]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T16:13:27.220299 #97600] DEBUG -- : body :
+I, [2021-12-10T16:13:27.222369 #97600]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:13:27 GMT"}, see debug logs for body
+D, [2021-12-10T16:13:27.222407 #97600] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:13:46.660939 #97694]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T16:13:46.661153 #97694]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T16:13:46.661193 #97694] DEBUG -- : body :
+I, [2021-12-10T16:13:46.677277 #97694]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:13:46 GMT"}, see debug logs for body
+D, [2021-12-10T16:13:46.677360 #97694] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:13:46.681742 #97694]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T16:13:46.681915 #97694]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T16:13:46.681951 #97694] DEBUG -- : body :
+I, [2021-12-10T16:13:46.685165 #97694]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:13:46 GMT"}, see debug logs for body
+D, [2021-12-10T16:13:46.685237 #97694] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:13:46.686929 #97694]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T16:13:46.687077 #97694]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T16:13:46.687111 #97694] DEBUG -- : body :
+I, [2021-12-10T16:13:46.689665 #97694]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:13:46 GMT"}, see debug logs for body
+D, [2021-12-10T16:13:46.689717 #97694] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:21:08.111769 #97930]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-10T16:21:08.112340 #97930]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-10T16:21:08.112389 #97930] DEBUG -- : body :
+I, [2021-12-10T16:21:08.129296 #97930]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"214", "Content-Type"=>"text/plain; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:21:08 GMT"}, see debug logs for body
+D, [2021-12-10T16:21:08.129370 #97930] DEBUG -- : body: {
+			"products": [
+			  {
+				"id": "1",
+				"name": "iphone",
+				"price": 1000,
+				"image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+				"quantity": 1
+			  },
+			  
+			]
+		  }
+I, [2021-12-10T16:21:08.133823 #97930]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-10T16:21:08.133968 #97930]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-10T16:21:08.134002 #97930] DEBUG -- : body :
+I, [2021-12-10T16:21:08.136523 #97930]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:21:08 GMT"}, see debug logs for body
+D, [2021-12-10T16:21:08.136573 #97930] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-10T16:21:08.138137 #97930]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-10T16:21:08.138275 #97930]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-10T16:21:08.138307 #97930] DEBUG -- : body :
+I, [2021-12-10T16:21:08.140614 #97930]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Fri, 10 Dec 2021 13:21:08 GMT"}, see debug logs for body
+D, [2021-12-10T16:21:08.140671 #97930] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-11T22:10:23.407513 #10567]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given i have products a request for products with GET /allproducts returns a response which has status code 200'
+I, [2021-12-11T22:10:23.408314 #10567]  INFO -- : Sending GET request to path: "/allproducts" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"i have products"}]}, see debug logs for body
+D, [2021-12-11T22:10:23.408402 #10567] DEBUG -- : body :
+I, [2021-12-11T22:10:23.425627 #10567]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"214", "Content-Type"=>"text/plain; charset=UTF-8", "Date"=>"Sat, 11 Dec 2021 19:10:23 GMT"}, see debug logs for body
+D, [2021-12-11T22:10:23.425688 #10567] DEBUG -- : body: {
+			"products": [
+			  {
+				"id": "1",
+				"name": "iphone",
+				"price": 1000,
+				"image": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+				"quantity": 1
+			  },
+			  
+			]
+		  }
+I, [2021-12-11T22:10:23.430030 #10567]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given increment product a request increment quantity of product with POST /basket/products/increment returns a response which has status code 200'
+I, [2021-12-11T22:10:23.430152 #10567]  INFO -- : Sending POST request to path: "/basket/products/increment" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"increment product"}]}, see debug logs for body
+D, [2021-12-11T22:10:23.430182 #10567] DEBUG -- : body :
+I, [2021-12-11T22:10:23.432555 #10567]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Sat, 11 Dec 2021 19:10:23 GMT"}, see debug logs for body
+D, [2021-12-11T22:10:23.432592 #10567] DEBUG -- : body: {"message":"Not Found"}
+
+I, [2021-12-11T22:10:23.433938 #10567]  INFO -- : Running example 'Verifying a pact between ShoppingCartConsumer and ShoppingCartProvider [PENDING] Given decrement product a request decrement quantity of product with POST /basket/products/decrement returns a response which has status code 200'
+I, [2021-12-11T22:10:23.434035 #10567]  INFO -- : Sending POST request to path: "/basket/products/decrement" with headers: {"HTTP_ACCEPT"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Accept", "X_PACT_PROVIDER_STATES"=>[{"name"=>"decrement product"}]}, see debug logs for body
+D, [2021-12-11T22:10:23.434061 #10567] DEBUG -- : body :
+I, [2021-12-11T22:10:23.436041 #10567]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"24", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Sat, 11 Dec 2021 19:10:23 GMT"}, see debug logs for body
+D, [2021-12-11T22:10:23.436081 #10567] DEBUG -- : body: {"message":"Not Found"}
+
