@@ -2,7 +2,7 @@
 
 import { pactWith } from "jest-pact"
 import { Matchers } from "@pact-foundation/pact"
-import { getProducts, increment, decrement} from "@/../services/shoppingCart.service.js"
+//import { getProducts, increment, decrement} from "@/../services/shoppingCart.service.js"
 const { eachLike } = Matchers
 
 pactWith(
@@ -14,7 +14,9 @@ pactWith(
                 id: "1", 
                 name: "iphone", 
                 price: 1000, 
-                image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg", quantity: 1 
+                image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg", 
+                quantity: 1,
+                basket: false 
             }
 
             const PRODUCTS = {

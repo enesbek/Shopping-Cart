@@ -7,7 +7,7 @@ exports.getProducts = endpoint => {
     .request({
       method: "GET",
       baseURL: url,
-      url: "/allproducts",
+      url: "/api/allproducts",
       headers: { Accept: "application/json" },
     })
     .then(response => response.data)
@@ -19,7 +19,7 @@ exports.increment = endpoint => {
     .request({
       method: "POST",
       baseURL: url,
-      url: "/basket/products/increment",
+      url: "/api/basket/products/increment",
       data: {
         quantity: { id: "1", name: "iphone", price: 1000, image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg", quantity: 1 }
       },
@@ -34,7 +34,7 @@ exports.decrement = endpoint => {
     .request({
       method: "POST",
       baseURL: url,
-      url: "/basket/products/decrement",
+      url: "/api/basket/products/decrement",
       data: {
         quantity: { id: "1", name: "iphone", price: 1000, image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg", quantity: 1 }
       },
