@@ -12,7 +12,7 @@ func main() {
 	e :=echo.New()
 
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"http://localhost:3000", "http://localhost:8080"},
+		AllowOrigins: []string{"http://localhost:3000", "http://127.0.0.1:8080"},
 		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
 	}))
 

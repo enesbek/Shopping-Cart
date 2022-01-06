@@ -45,12 +45,12 @@ func startServer(t *testing.T) {
 
 	h := handler.NewHandler(m)
 
-	e.GET("/api/allproducts", h.GetAllProducts)
-	e.POST("/api/basket/products/increment/:id", h.PostBasketIncrement)
-	e.POST("/api/basket/products/decrement/:id", h.PostBasketDecrement)
-	e.GET("/api/basket", h.GetAllBasketProducts)
-	e.POST("/api/basket/add/:id", h.PostAddToBasket)
-	e.POST("/api/basket/delete/:id", h.DeleteBasketProduct)
+	e.GET("/quotes/allproducts", h.GetAllProducts)
+	e.POST("/quotes/basket/products/increment/:id", h.PostBasketIncrement)
+	e.POST("/quotes/basket/products/decrement/:id", h.PostBasketDecrement)
+	e.GET("/quotes/basket", h.GetAllBasketProducts)
+	e.POST("/quotes/basket/add/:id", h.PostAddToBasket)
+	e.POST("/quotes/basket/delete/:id", h.DeleteBasketProduct)
 
 	e.Logger.Fatal(e.Start(":3000"))
 }
@@ -66,7 +66,7 @@ func TestProvider(t *testing.T) {
 
 	_, err:= pact.VerifyProvider(t, types.VerifyRequest{
 		ProviderBaseURL:			"http://localhost:3000",
-		PactURLs:  					[]string{"https://enesbek.pactflow.io/pacts/provider/ShoppingCartProvider/consumer/ShoppingCartConsumer/version/2.0.9"},
+		PactURLs:  					[]string{"https://enesbek.pactflow.io/pacts/barApi/ShoppingCartProvider/fooApi/ShoppingCartConsumer/version/2.0.9"},
 		BrokerToken:				"BB6cjlL4fdMPxwxdQS6uLA",
 		ProviderVersion:			"2.0.0",
 		PublishVerificationResults: 	true,
