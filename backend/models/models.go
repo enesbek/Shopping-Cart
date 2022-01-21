@@ -1,7 +1,8 @@
 package models
 
 import (
-	"Shopping-Cart/backend/constants"
+	"backend/constants"
+
 	"github.com/jmoiron/sqlx"
 )
 

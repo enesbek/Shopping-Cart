@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"Shopping-Cart/backend/mocks"
-	"Shopping-Cart/backend/models"
+	"backend/mocks"
+	"backend/models"
 	"bytes"
 	"encoding/json"
 	"fmt"
@@ -20,14 +20,14 @@ func TestGetAllProductsSuccesfully(t *testing.T) {
 	req := httptest.NewRequest(http.MethodGet, "/", nil)
 	rec := httptest.NewRecorder()
 
-	 products := []models.Product{
+	products := []models.Product{
 		models.Product{
-			Id:1,
-			Name: "iphone",
-			Price: 1000,
-			Image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+			Id:       1,
+			Name:     "iphone",
+			Price:    1000,
+			Image:    "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
 			Quantity: 1,
-			Basket: false,
+			Basket:   false,
 		},
 	}
 
@@ -90,10 +90,10 @@ func TestPostAddToBasketSuccesfully(t *testing.T) {
 	c.SetParamValues("1")
 
 	var product = models.Product{
-		Id: 1,
-		Name: "samsung",
-		Price: 900,
-		Image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
+		Id:       1,
+		Name:     "samsung",
+		Price:    900,
+		Image:    "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
 		Quantity: 1,
 	}
 
@@ -126,10 +126,10 @@ func TestPostBasketIncrementSuccessfully(t *testing.T) {
 	c.SetParamValues("1")
 
 	var product = models.Product{
-		Id: 1,
-		Name: "samsung",
-		Price: 900,
-		Image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
+		Id:       1,
+		Name:     "samsung",
+		Price:    900,
+		Image:    "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
 		Quantity: 1,
 	}
 
@@ -162,10 +162,10 @@ func TestPostBasketDecrementSuccessfully(t *testing.T) {
 	c.SetParamValues("1")
 
 	var product = models.Product{
-		Id: 1,
-		Name: "samsung",
-		Price: 900,
-		Image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
+		Id:       1,
+		Name:     "samsung",
+		Price:    900,
+		Image:    "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
 		Quantity: 1,
 	}
 
@@ -198,10 +198,10 @@ func TestPostDeleteBasketProductSuccessfully(t *testing.T) {
 	c.SetParamValues("1")
 
 	var product = models.Product{
-		Id: 1,
-		Name: "samsung",
-		Price: 900,
-		Image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
+		Id:       1,
+		Name:     "samsung",
+		Price:    900,
+		Image:    "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/117735-ana_large.jpg",
 		Quantity: 1,
 	}
 

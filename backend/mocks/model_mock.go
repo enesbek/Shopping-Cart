@@ -5,7 +5,7 @@
 package mocks
 
 import (
-	models "Shopping-Cart/backend/models"
+	models "backend/models"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"

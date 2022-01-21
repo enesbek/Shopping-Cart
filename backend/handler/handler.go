@@ -1,11 +1,12 @@
 package handler
 
 import (
-	"Shopping-Cart/backend/constants"
-	"Shopping-Cart/backend/models"
-	"github.com/labstack/echo/v4"
+	"backend/constants"
+	"backend/models"
 	"net/http"
 	"strconv"
+
+	"github.com/labstack/echo/v4"
 )
 
 type handler struct {

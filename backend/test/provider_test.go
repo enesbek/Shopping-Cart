@@ -1,9 +1,9 @@
 package tests
 
 import (
-	"Shopping-Cart/backend/handler"
-	"Shopping-Cart/backend/mocks"
-	"Shopping-Cart/backend/models"
+	"backend/handler"
+	"backend/mocks"
+	"backend/models"
 	"github.com/golang/mock/gomock"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -13,7 +13,7 @@ import (
 )
 
 func startServer(t *testing.T) {
-	e :=echo.New()
+	e := echo.New()
 
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 		AllowOrigins: []string{"http://localhost:3000", "http://localhost:8080"},
@@ -21,15 +21,15 @@ func startServer(t *testing.T) {
 	}))
 
 	products := []models.Product{
-									{
-										Id:1,
-										Name: "iphone",
-										Price: 1000,
-										Image: "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
-										Quantity: 1,
-										Basket: false,
-									},
-								}
+		{
+			Id:       1,
+			Name:     "iphone",
+			Price:    1000,
+			Image:    "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/ip-3_large.jpg",
+			Quantity: 1,
+			Basket:   false,
+		},
+	}
 
 	ctrl := gomock.NewController(t)
 	defer ctrl.Finish()
@@ -57,19 +57,19 @@ func startServer(t *testing.T) {
 
 func TestProvider(t *testing.T) {
 	pact := dsl.Pact{
-		Provider: "ShoppingCartProvider",
+		Provider:                 "ShoppingCartProvider",
 		DisableToolValidityCheck: true,
-		Host: "127.0.0.1",
+		Host:                     "127.0.0.1",
 	}
 
 	go startServer(t)
 
-	_, err:= pact.VerifyProvider(t, types.VerifyRequest{
-		ProviderBaseURL:			"http://localhost:3000",
-		PactURLs:  					[]string{"https://enesbek.pactflow.io/pacts/barApi/ShoppingCartProvider/fooApi/ShoppingCartConsumer/version/2.0.9"},
-		BrokerToken:				"BB6cjlL4fdMPxwxdQS6uLA",
-		ProviderVersion:			"2.0.0",
-		PublishVerificationResults: 	true,
+	_, err := pact.VerifyProvider(t, types.VerifyRequest{
+		ProviderBaseURL:            "http://localhost:3000",
+		PactURLs:                   []string{"https://enesbek.pactflow.io/pacts/barApi/ShoppingCartProvider/fooApi/ShoppingCartConsumer/version/2.0.9"},
+		BrokerToken:                "BB6cjlL4fdMPxwxdQS6uLA",
+		ProviderVersion:            "2.0.0",
+		PublishVerificationResults: true,
 	})
 
 	if err != nil {
