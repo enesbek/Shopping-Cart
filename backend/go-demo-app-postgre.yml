@@ -1,20 +1,79 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-demo-app-postgre
+  name: testdb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: go-demo-app-postgre
+      # tier: testdb
+      app: testdb # <- *****changed here******
   template:
     metadata:
       labels:
-        app: go-demo-app-postgre
+        app: testdb
     spec:
       containers:
-        - name: backend
-          image: backend_go
-          imagePullPolicy: Never
+        - name: testdb
+          image: postgres:latest
+          env:
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: "1234"
+            - name: POSTGRES_DB
+              value: postgres
           ports:
-          - containerPort: 3000
+            - containerPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-app
+  template:
+    metadata:
+      labels:
+        app: go-app
+    spec:
+      containers:
+      - name: backend
+        image: enesbek/backend_go
+        env:
+          - name: DBHOST
+            value: testdb
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: testdb
+  labels:
+    app: testdb
+spec:
+  ports:
+  - port: 5432
+    name: web
+  clusterIP: None
+  selector:
+    app: testdb
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: go-app
+  labels:
+    app: go-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: go-app
+  ports:
+  - port: 3001
+    protocol: TCP 
+    
